@@ -17,6 +17,16 @@ def home(request):
     }
     return render(request, 'blog/home.html', context)
 
+def list_user(request):
+    authors = {
+        'users': User.objects.all()
+    }
+    return render(request,'blog/list_authors.html', authors)
+
+class UserListView(ListView):
+    model = User
+    template_name = 'blog/list_authors.html'  # <app>/<model>_<viewtype>.html
+    context_object_name = 'users'
 
 class PostListView(ListView):
     model = Post
