@@ -25,7 +25,7 @@ SECRET_KEY = '8ao!8092*n%(zkslum5z_dpul=+7^*gf$1-znp!2kpor0^k_hl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://ferdian89.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['ferdian89.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
